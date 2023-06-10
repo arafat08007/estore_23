@@ -10,7 +10,8 @@ class TabbarItem {
   final String boldIcon;
   final String label;
 
-  TabbarItem({required this.lightIcon, required this.boldIcon, required this.label});
+  TabbarItem(
+      {required this.lightIcon, required this.boldIcon, required this.label});
 
   BottomNavigationBarItem item(bool isbold) {
     return BottomNavigationBarItem(
@@ -35,7 +36,7 @@ class _FRTabbarScreenState extends State<FRTabbarScreen> {
 
   final screens = [
     const HomeScreen(
-      title: '首页0',
+      title: 'ENORSIA',
     ),
     const TestScreen(title: 'Cart'),
     const TestScreen(title: 'Orders'),
