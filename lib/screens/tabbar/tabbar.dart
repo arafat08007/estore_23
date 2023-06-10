@@ -40,13 +40,13 @@ class _FRTabbarScreenState extends State<FRTabbarScreen> {
     ),
     const TestScreen(title: 'Cart'),
     const TestScreen(title: 'Orders'),
-    const TestScreen(title: 'Wallet'),
+    //const TestScreen(title: 'Wallet'),
     const ProfileScreen(),
   ];
 
   static Image generateIcon(String path) {
     return Image.asset(
-      '${ImageLoader.rootPaht}/tabbar/$path',
+      '${ImageLoader.rootPaht}tabbar/$path',
       width: 24,
       height: 24,
     );
@@ -68,11 +68,11 @@ class _FRTabbarScreenState extends State<FRTabbarScreen> {
       activeIcon: generateIcon('bold/Buy@2x.png'),
       label: 'Orders',
     ),
-    BottomNavigationBarItem(
-      icon: generateIcon('light/Wallet@2x.png'),
-      activeIcon: generateIcon('bold/Wallet@2x.png'),
-      label: 'Wallet',
-    ),
+    // BottomNavigationBarItem(
+    //   icon: generateIcon('light/Wallet@2x.png'),
+    //   activeIcon: generateIcon('bold/Wallet@2x.png'),
+    //   label: 'Wallet',
+    // ),
     BottomNavigationBarItem(
       icon: generateIcon('light/Profile@2x.png'),
       activeIcon: generateIcon('bold/Profile@2x.png'),

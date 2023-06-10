@@ -15,7 +15,7 @@ class HomeAppBar extends StatelessWidget {
             borderRadius: const BorderRadius.all(Radius.circular(24)),
             onTap: () => Navigator.pushNamed(context, ProfileScreen.route()),
             child: const CircleAvatar(
-              backgroundImage: AssetImage('$kIconPath/me.png'),
+              backgroundImage: AssetImage('${kIconPath}me.png'),
               radius: 24,
             ),
           ),
@@ -48,13 +48,13 @@ class HomeAppBar extends StatelessWidget {
           ),
           IconButton(
             iconSize: 28,
-            icon: Image.asset('$kIconPath/notification.png'),
+            icon: Image.asset('${kIconPath}notification.png'),
             onPressed: () {},
           ),
           const SizedBox(width: 16),
           IconButton(
             iconSize: 28,
-            icon: Image.asset('$kIconPath/light/heart@2x.png'),
+            icon: Image.asset('${kIconPath}light/heart@2x.png'),
             onPressed: () {},
           ),
         ],
